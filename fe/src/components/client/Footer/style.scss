@@ -1,0 +1,28 @@
+.footerClient{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    padding: 10px 24px 10px 24px;
+    border-top: 1px solid var(--primary-color);
+    background: white;
+
+    .brandLocation{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+
+        .brand {
+            background: var(--primary-color);
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: auto 0;
+            padding: 0 20px;
+        }
+    }
+}

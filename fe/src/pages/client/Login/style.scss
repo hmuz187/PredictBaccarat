@@ -1,0 +1,88 @@
+.loginClient {
+
+    .wrapper {
+        margin: 5% auto;
+        display: block;
+        width: 500px;
+        text-align: center;
+
+        .container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 500px;
+            padding: 0 0 20px 0;
+
+
+
+            .headerLogin {
+                color: var(--primary-color);
+                font-weight: bold;
+
+                p{
+                    color: #ccc;
+                }
+            }
+
+            .formLogin {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 400px;
+                margin: 0 auto;
+
+                .inputForm {
+                    padding: 10px;
+                    margin: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    width: 400px;
+                }
+
+                .wrapperPassword{
+
+                    input{
+                        padding: 10px;
+                        margin: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        width: 400px;
+                    }
+                }
+
+                button {
+                    margin: 0 auto;
+                    width: fit-content;
+                }
+
+                a {
+                    color: #1877f2;
+                    text-decoration: none;
+                    margin: 10px 0;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                .login {
+                    background-color: #1877f2;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    width: 300px;
+                    padding: 10px;
+                }
+
+                .signup {
+                    background-color: #42b72a;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    width: 200px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+}

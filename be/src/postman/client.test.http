@@ -1,0 +1,41 @@
+@url = http://localhost:2002/v1/client
+
+
+###
+POST {{url}}/predict
+Content-Type: application/json
+
+{
+    "string" : "0010101000011000110000010010011"
+}
+
+
+###
+POST {{url}}/signup
+Content-Type: application/json
+
+{
+    "username": "Minh Hy",
+    "email": "minhhy@gmail.com",
+    "password": "abc123"
+}
+
+
+###
+POST {{url}}/signin
+Content-Type: application/json
+
+{
+    "email": "minhhy@gmail.com",
+    "password": "abc123"
+}
+
+
+###
+POST {{url}}/logout
+Content-Type: application/json
+h-client-id: 64e78fa6cb798ff7c8bc4c14
+athorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGU3OGZhNmNiNzk4ZmY3YzhiYzRjMTQiLCJlbWFpbCI6Im1pbmhoeUBnbWFpbC5jb20iLCJpYXQiOjE2OTI5MDA3NjUsImV4cCI6MTY5MzA3MzU2NX0.fTuGSn84joXwpQ33uJWy7vdK2S47ijzgQOyirj-S2fM
+
+
+

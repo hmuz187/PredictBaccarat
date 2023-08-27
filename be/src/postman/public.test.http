@@ -1,0 +1,13 @@
+@url = http://localhost:2002/v1/public
+
+###
+GET {{url}}/try/algorithm
+
+
+###
+POST {{url}}/try/tableResultString
+Content-Type: application/json
+
+{
+    "string" : "0010101000011000110000010010011"
+}

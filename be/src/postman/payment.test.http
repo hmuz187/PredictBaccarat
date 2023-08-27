@@ -1,0 +1,12 @@
+@url = http://localhost:2002/v1/payment
+
+
+###
+POST {{url}}/paypal/orders
+Content-Type: application/json
+
+{
+        "userId": "minhhy",
+        "totalPayment": 120,
+        "applyPayment": "Paypal"
+}

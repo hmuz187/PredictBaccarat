@@ -1,0 +1,287 @@
+@media only screen and (min-width: 500px) {
+    .footerPublic {
+        // position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        text-align: left;
+        padding: 10px 24px 10px 24px;
+        border-top: 1px solid var(--primary-color);
+        background: white;
+
+
+        .contactForm {
+            a {
+                text-decoration: underline;
+                color: black;
+                font-style: italic;
+            }
+
+            a:hover {
+                color: var(--primary-color)
+            }
+        }
+
+        .allLink {
+            .wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); //grid-template-columns: 250px repeat(12, 1fr);
+                column-gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    color: var(--primary-color)
+                }
+
+            }
+        }
+
+        .brandLocation{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+
+            .language {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                border: 1px solid var(--primary-color);
+                border-radius: 5px;
+                height: 30px;
+                width: fit-content;
+                margin: auto 0;
+
+    
+                .icon-earth {
+                    height: 80%;
+                    margin: auto 2px;
+                    display: flex;
+                    text-align: left;
+                    color: white;
+    
+                    img {
+                        margin: auto 0;
+    
+                    }
+                }
+    
+                select {
+                    margin: auto;
+                    height: 80%;
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                }
+    
+            }
+    
+            .brand {
+                background: var(--primary-color);
+                border-radius: 10px;
+                text-align: center;
+                font-weight: bold;
+                margin: auto 0;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footerPublic {
+        // position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        text-align: left;
+        padding: 10px 24px 10px 24px;
+        border-top: 1px solid var(--primary-color);
+        background: white;
+
+
+        .contactForm {
+            a {
+                text-decoration: underline;
+                color: black;
+                font-style: italic;
+            }
+
+            a:hover {
+                color: var(--primary-color)
+            }
+        }
+
+        .allLink {
+            .wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); //grid-template-columns: 250px repeat(12, 1fr);
+                column-gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    color: var(--primary-color)
+                }
+
+            }
+        }
+
+        .brandLocation{
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .language {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                border: 1px solid var(--primary-color);
+                border-radius: 5px;
+                height: 30px;
+                width: fit-content;
+                margin: auto 0;
+
+    
+                .icon-earth {
+                    height: 80%;
+                    margin: auto 2px;
+                    display: flex;
+                    text-align: left;
+                    color: white;
+    
+                    img {
+                        margin: auto 0;
+    
+                    }
+                }
+    
+                select {
+                    margin: auto;
+                    height: 80%;
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                }
+    
+            }
+    
+            .brand {
+                background: var(--primary-color);
+                border-radius: 10px;
+                text-align: center;
+                font-weight: bold;
+                margin: 10px 0;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    .footerPublic {
+        // position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        text-align: left;
+        padding: 10px 24px 10px 24px;
+        border-top: 1px solid var(--primary-color);
+        background: white;
+
+
+        .contactForm {
+            a {
+                text-decoration: underline;
+                color: black;
+                font-style: italic;
+            }
+
+            a:hover {
+                color: var(--primary-color)
+            }
+        }
+
+        .allLink {
+            .wrapper {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr); //grid-template-columns: 250px repeat(12, 1fr);
+                column-gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    color: var(--primary-color)
+                }
+
+            }
+        }
+
+        .brandLocation{
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .language {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                border: 1px solid var(--primary-color);
+                border-radius: 5px;
+                height: 30px;
+                width: fit-content;
+                margin: auto 0;
+
+    
+                .icon-earth {
+                    height: 80%;
+                    margin: auto 2px;
+                    display: flex;
+                    text-align: left;
+                    color: white;
+    
+                    img {
+                        margin: auto 0;
+    
+                    }
+                }
+    
+                select {
+                    margin: auto;
+                    height: 80%;
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                }
+    
+            }
+    
+            .brand {
+                background: var(--primary-color);
+                border-radius: 10px;
+                text-align: center;
+                font-weight: bold;
+                margin: 10px 0;
+                padding: 0 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.bannerPublic {
+    .contentBanner {
+        text-align: center;
+        margin-top: 0px;
+        padding: 200px 0;
+
+        // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background: linear-gradient(-45deg, rgba(165,175,96,1) 0%, rgba(234,241,182,1) 26%, rgba(87,197,204,1) 63%, rgba(236,232,227,1) 100%);
+        background-size: 400% 400%;
+        animation: gradient-bg01 15s ease infinite;
+        opacity: 100%;
+
+        @keyframes gradient-bg01 {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            margin: 20px auto;
+            color: var(--primary-color);
+            font-weight: 900;
+        }
+
+        h2 {
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-color); // antiquewhite;
+            color: white;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+
+    }
+}

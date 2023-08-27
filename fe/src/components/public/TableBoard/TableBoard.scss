@@ -1,0 +1,78 @@
+.TableBoardPublic {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .inputButton {
+        padding-top: 20px;
+
+        .button_input {
+            margin: 5px;
+            color: white;
+            font-weight: bold;
+            width: fit-content;
+            min-width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50%;
+        }
+
+        #buttonP {
+            background-color: blue;
+        }
+
+        #buttonB {
+            background-color: red;
+        }
+
+        #buttonT {
+            background-color: green;
+        }
+
+        #buttonDelete {
+            background-color: black;
+            font-weight: normal;
+        }
+    }
+
+    .containerTable {
+        table {
+            grid-template-rows: repeat(6, 1fr);
+            height: 250px;
+            width: 400px;
+            margin: 0 auto;
+
+            tbody{
+                tr {
+                    border: 1px solid black;
+                    td {
+                        border-bottom: 1px solid var(--primary-color);
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .getResult{
+        margin: 25px 0 25px 0;
+        button{
+            background-color: white;
+            border-radius: 5px;
+        }
+    }
+
+    .reportResult{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}

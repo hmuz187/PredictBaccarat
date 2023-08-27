@@ -1,0 +1,27 @@
+@import 'normalize.css';
+
+
+* {
+    box-sizing: border-box;
+   
+}
+
+:root{
+    --primary-color:  #c63033;
+    --second-color: #32c0d4;;
+    --blue-color: #005cc9;
+    --red-color: #d40000;
+    --green-color: #27780c;
+}
+
+html{
+    font-size: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: gilroy,noto,sans-serif;
+    font-size: 14px; /* 1.6rem */ /* font-weight: 600; */
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}

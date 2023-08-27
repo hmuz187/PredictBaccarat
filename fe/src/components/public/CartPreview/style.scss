@@ -1,0 +1,109 @@
+.cartPreview {
+
+    .container {
+        .shopping-cart {
+            margin-top: 42px;
+            background: white;
+            width: 360px;
+            height: 500px;
+            overflow: scroll;
+            position: absolute;
+            border-radius: 3px;
+            padding: 10px;
+            opacity: 0.9;
+
+
+
+            .shopping-cart-header {
+                border-bottom: 1px solid #E8E8E8;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: center;
+
+                .shopping-cart-algorithm {
+                    margin: auto 0;
+                    display: inline-flex;
+
+                    span {
+                        font-weight: bold;
+                        margin: auto;
+                        padding-left: 2px;
+                        color: var(--primary-color);
+                    }
+                }
+
+                .shopping-cart-total {
+                    display: inline-flex;
+                    margin: auto 0;
+
+                    .lighter-text {
+                        font-weight: bold;
+                    }
+
+                    .main-color-text {
+                        color: var(--primary-color);
+                        font-weight: bold;
+                        padding-left: 2px;
+                    }
+                }
+            }
+
+            .shopping-cart-items {
+
+                text-align: right;
+                padding-right: 10px;
+                padding-left: 0;
+
+                .clearfix {
+                    list-style: none;
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+
+                        .item-name {
+                            font-size: 16px;
+                            padding-left: 5px;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .item-price {
+                        color: var(--primary-color);
+                    }
+
+                    .item-quantity {
+                        color: var(--primary-color);
+                        padding-left: 20px;
+                    }
+
+                    .item-package-total {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .button {
+                background: var(--primary-color);
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                display: block;
+                border-radius: 5px;
+                font-size: 16px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                ;
+                font-weight: bold;
+                margin: 25px 0 15px 0;
+            }
+        }
+    }
+
+
+
+
+
+}

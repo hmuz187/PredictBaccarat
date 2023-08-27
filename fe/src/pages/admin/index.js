@@ -1,0 +1,6 @@
+export {default as AdminLogin} from './Login'
+export {default as AdminDashboard} from './Dashboard'
+export {default as AdminNotification} from './Notification'
+export {default as AdminReport} from './Report'
+export {default as AdminProduct} from './Product'
+export {default as AdminUser} from './User'
