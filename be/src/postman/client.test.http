@@ -6,7 +6,7 @@ POST {{url}}/predict
 Content-Type: application/json
 
 {
-    "string" : "0010101000011000110000010010011"
+    "string" : "BBBBPPTPTPB"
 }
 
 ###
@@ -14,18 +14,9 @@ POST http://103.116.105.147:2002/v1/client/predict
 Content-Type: application/json
 
 {
-    "string" : "0010101000011000110000010010011"
+    "string" : "BBBBPPTPTPB"
 }
 
-
-
-###
-POST {{url}}/signup/getVerifyCode
-Content-Type: application/json
-
-{
-    "userEmail": "alex.spencer0209@gmail.com"
-}
 
 
 
