@@ -1,14 +1,16 @@
 .forgotPasswordClient{
+    
     .wrapper {
         margin: 5% auto;
         display: block;
-        width: 500px;
+        min-width: 250px;
+        max-width: 500px;
         text-align: center;
 
         .container {
             border: 1px solid #ccc;
             border-radius: 5px;
-            width: 500px;
+            width: 100%;
             padding: 0 0 20px 0;
 
 
@@ -25,21 +27,29 @@
             .formLogin {
                 display: flex;
                 flex-direction: column;
-                text-align: center;
-                width: 400px;
+                text-align: left;
+                width: 90%;
                 margin: 0 auto;
 
                 .inputForm {
                     padding: 10px;
-                    margin: 10px;
+                    margin-bottom: 10px;
                     border: 1px solid #ccc;
                     border-radius: 5px;
-                    width: 400px;
+                    width: 100%;
                 }
 
-                span {
+                .verifyCode{
+                    margin-right: 10px;
+                    margin: auto 10px auto auto;
+                    width: 90%;
+
+                }
+
+                p {
                     color: black;
                     font-weight: normal;
+                    text-align: center;
 
                     a {
                         color: #1877f2;

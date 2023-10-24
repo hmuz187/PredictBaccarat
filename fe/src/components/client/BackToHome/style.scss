@@ -1,0 +1,15 @@
+.backToHome {
+    text-align: right;
+    .checkOutHome {
+        display: inline-flex;
+        color: var(--primary-color);
+        margin: auto 0 0 auto;
+
+        a {
+            cursor: pointer;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+}

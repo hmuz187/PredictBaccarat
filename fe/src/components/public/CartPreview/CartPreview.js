@@ -1,8 +1,10 @@
 import React, { useContext } from 'react'
-import { useNavigate } from "react-router-dom";
-import { CartStateContext, CartDispatchContext, removeFromCart, toggleCartPopup, addToCart } from '../../../context/cart';
+// import { useNavigate } from "react-router-dom";
+import { CartStateContext} from '../../../context/cart';
 import './style.scss'
 import icons from '../../../utils/icon/reactIcon'
+import { link } from '../../../routes/link';
+import { AuthStateContext } from '../../../context/auth';
 
 
 const CartPreview = () => {
@@ -10,22 +12,13 @@ const CartPreview = () => {
   const { AiOutlineShoppingCart, FaHandPointRight } = icons
 
 
-  const { items, isCartOpen } = useContext(CartStateContext);
-  const dispatch = useContext(CartDispatchContext);
-  const navigate = useNavigate();
+  const { items} = useContext(CartStateContext);
+  // const dispatch = useContext(CartDispatchContext);
+  // const navigate = useNavigate();
 
-  const handleRemove = (item) => {
-    return removeFromCart(dispatch, item);
-  };
 
-  const handleAdd = (item) => {
-    return addToCart(dispatch, item);
-  };
-
-  const handleProceedCheckout = () => {
-    toggleCartPopup(dispatch);
-    navigate("/checkout");
-  };
+  const { isLoggedIn } = useContext(AuthStateContext)
+  // const nameShow = user.username ? user.username : ''
 
   const cartTotal = items
     .map(item => item.price * item.quantity)
@@ -33,9 +26,9 @@ const CartPreview = () => {
 
   const cartTotalAlgorithm = items.length
 
-  const cartTotalPackage = items
-    .map(item => item.quantity)
-    .reduce((prev, current) => prev + current, 0)
+  // const cartTotalPackage = items
+  //   .map(item => item.quantity)
+  //   .reduce((prev, current) => prev + current, 0)
 
   return (
     <div className='cartPreview'>
@@ -61,7 +54,7 @@ const CartPreview = () => {
                 <li className="clearfix">
                   <div>
                     <span><FaHandPointRight size={24} /></span>
-                    <span className="item-name">{item.algorithm} - <span style={{fontWeight:'bold', fontSize:'16px'}}>{item.package}</span></span>
+                    <span className="item-name">{item.algorithm} - <span style={{ fontWeight: 'bold', fontSize: '16px' }}>{item.package}</span></span>
                   </div>
 
                   <span className="item-price">{item.price}$/unit</span>
@@ -73,7 +66,11 @@ const CartPreview = () => {
 
           </ul>
 
-          <a href="/private/login" className="button">Checkout</a>
+          {isLoggedIn ? <>
+            <a href={link.CLIENT_CHECKOUT} className="button">Checkout</a>
+          </> : <>
+            <a href={link.CLIENT_LOGIN} className="button">Checkout</a>
+          </>}
 
         </div>
       </div>

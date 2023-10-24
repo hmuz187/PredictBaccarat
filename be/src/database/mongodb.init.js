@@ -1,9 +1,12 @@
 'use strict'
 
+require('dotenv').config()
 const mongoose = require('mongoose')
 const {countConnection, checkOverLoad} = require('../helpers/checkConnect.mongodb')
 const {db:{host, port, name}} = require('../config/database.config')
 const connectionString = `mongodb://${host}:${port}/${name}`
+// const connectionString = process.env.MONGODB_URL
+
 
 class Database {
     constructor(){

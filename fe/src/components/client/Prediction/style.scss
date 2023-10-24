@@ -86,12 +86,12 @@
 
         .getAlgorithmResult {
             margin: 25px 5px 10px 5px;
+            cursor: pointer;
 
             button {
                 background-color: white;
                 border-radius: 5px;
                 padding: 5px;
-                cursor: pointer;
             }
 
             button:hover {
@@ -107,18 +107,22 @@
             width: 100%;
 
             .logicMath {
+                max-width: 250px;
                 color: var(--blue-color);
             }
 
             .AI {
+                max-width: 250px;
                 color: var(--red-color);
             }
 
             .naturalRandom {
+                max-width: 250px;
                 color: var(--green-color);
             }
 
             .fixPattern {
+                max-width: 250px;
                 color: purple;
             }
 
@@ -253,18 +257,22 @@
             padding: 0 20px;
 
             .logicMath {
+                max-width: 300px;
                 color: var(--blue-color);
             }
 
             .AI {
+                max-width: 300px;
                 color: var(--red-color);
             }
 
             .naturalRandom {
+                max-width: 300px;
                 color: var(--green-color);
             }
 
             .fixPattern {
+                max-width: 300px;
                 color: purple;
             }
 
@@ -399,18 +407,22 @@
             padding: 0 20px;
 
             .logicMath {
+                max-width: 300px;
                 color: var(--blue-color);
             }
 
             .AI {
+                max-width: 300px;
                 color: var(--red-color);
             }
 
             .naturalRandom {
+                max-width: 300px;
                 color: var(--green-color);
             }
 
             .fixPattern {
+                max-width: 300px;
                 color: purple;
             }
 

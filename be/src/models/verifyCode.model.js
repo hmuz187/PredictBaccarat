@@ -6,7 +6,8 @@ const COLLECTION_NAME = 'VerifyCodes'
 const verifyCodeModel = new Schema({
     email:{type: String, required: true, unique: true},
     code: {type: String, required: true},
-    role: {type: String, enum: ['signup', 'signin', 'forgotPassword', 'changePassword', 'payment', 'checkingPayment', 'ask'], default:'signup'}
+    role: {type: String, enum: ['signup', 'signin', 'forgotPassword', 'changePassword', 'payment', 'checkingPayment', 'ask'], default:'signup'},
+    createdAt: { type: Date, expires: 600, default: Date.now },
 }, {
     timestamps: true,
     expireAfterSeconds: 600,  //1mins=60, 1hour = 3600, 24hour = 86400

@@ -9,6 +9,74 @@ Content-Type: application/json
     "string" : "0010101000011000110000010010011"
 }
 
+###
+POST http://103.116.105.147:2002/v1/client/predict
+Content-Type: application/json
+
+{
+    "string" : "0010101000011000110000010010011"
+}
+
+
+
+###
+POST {{url}}/signup/getVerifyCode
+Content-Type: application/json
+
+{
+    "userEmail": "alex.spencer0209@gmail.com"
+}
+
+
+
+###
+POST http://192.168.40.110:2002/v1/client/forgotPassword/getVerifyCode
+Content-Type: application/json
+
+{
+    "userEmail": "minhhy@gmail.com"
+}
+
+
+###
+POST http://192.168.40.110:2002/v1/client/signup/getVerifyCode
+Content-Type: application/json
+
+{
+    "userEmail": "minhhy001@gmail.com"
+}
+
+
+###
+POST http://192.168.40.110:2002/v1/client/forgotPassword/getVerifyCode
+Content-Type: application/json
+
+{
+    "userEmail": "minhhy@gmail.com"
+}
+
+
+###
+POST http://192.168.40.110:2002/v1/client/signup/getVerifyCode
+Content-Type: application/json
+
+{
+    "userEmail": "minhhy001@gmail.com"
+}
+
+
+###
+POST http://192.168.40.110:2002/v1/client/signup
+Content-Type: application/json
+
+{
+    "email": "minhhy001@gmail.com",
+    "username": "Minh Hy",
+    "password": "abc123",
+    "verifyCode" : "844aef"
+}
+
+
 
 ###
 POST {{url}}/signup
@@ -29,6 +97,7 @@ Content-Type: application/json
     "email": "minhhy@gmail.com",
     "password": "abc123"
 }
+
 
 
 ###

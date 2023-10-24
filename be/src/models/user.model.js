@@ -11,8 +11,8 @@ const userModel = new Schema({
     passwordVerifyToken: {type:String},
     passwordResetExpire: {type:Date, default: Date.now},
 
-    cart: {type: Array, default:[]},
-    totalPaid: {type: Number, defaul:0},
+    cart: {type: Array, default:[]}, //orderID
+    totalPaid: {type: Number, default:0},
     applyPayment: {type: Array, default: []}
     
     

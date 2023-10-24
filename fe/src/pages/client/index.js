@@ -5,6 +5,8 @@ export {default as ClientDashboard} from './Dashboard/Dashboard'
 export {default as ClientCheckOut} from './CheckOut/CheckOut'
 
 
-export {default as ClientProfile} from './Profile'
-export {default as ClientPackage} from './Payment'
-export {default as ClientHistory} from './History'
+export {default as ClientProfile} from './Profile/Profile'
+export {default as ClientPackage} from './Package/Package'
+export {default as ClientHistory} from './History/History'
+
+export {default as LayoutClientAuth} from './LayoutClientAuth/LayoutClientAuth'

@@ -5,6 +5,8 @@ import { Page404 } from '../pages/public'
 
 
 const Browser = () => {
+
+
   return (
     <Router>
       <Routes>

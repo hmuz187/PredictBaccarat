@@ -60,9 +60,23 @@ const reducer = (state=initialState, action) => {
     case "CLEAR_CART":
       return {
         ...state,
-        ...initialState
+        items: state.items.map(item => {
+            if (item.id === action.payload.cartItem.id) {
+                return {
+                    ...item,
+                    quantity: 0
+                };
+            } else {
+                return item;
+            }
+        }).filter(item => item.quantity > 0)
       };
-
+    
+    case "DELETE_CART":
+      return {
+                ...state,
+                ...initialState
+      };
     default:
       throw new Error(`Unknown action: ${action.type}`);
   }
@@ -92,9 +106,19 @@ export const removeFromCart = (dispatch, cartItem) => {
   });
 };
 
-export const clearCart = (dispatch) => {
+export const clearCart = (dispatch, cartItem) => {
   return dispatch({
-    type: "CLEAR_CART"
+    type: "CLEAR_CART",
+    payload: {
+      cartItem: cartItem
+    }
+  });
+};
+
+
+export const deleteCart = (dispatch, cartItem) => {
+  return dispatch({
+    type: "DELETE_CART"
   });
 };
 

@@ -1,0 +1,86 @@
+.clientPackageBought {
+    text-align: center;
+
+    .showList{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        h3 {
+            color: var(--primary-color);
+            padding: 10px;
+        }
+    
+        button {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            display: block;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: auto 5px;
+            padding: 10px;
+        }
+    }
+
+
+    .tablePackage {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+
+        td,
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        td {
+            .clearfix {
+                list-style: none;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+
+                    .item-name {
+                        font-size: 16px;
+                        padding-left: 5px;
+                        text-decoration: underline;
+                    }
+                }
+
+                .item-price {
+                    color: var(--primary-color);
+                }
+
+                .item-quantity {
+                    color: var(--primary-color);
+                    padding-left: 10px;
+                    padding-right: 20px;
+                }
+
+                .item-package-total {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

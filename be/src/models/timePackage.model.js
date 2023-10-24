@@ -6,15 +6,10 @@ const COLLECTION_NAME = 'TimePackages'
 const timePackageModel = new Schema({
     userId: { type: Schema.Types.ObjectId, required: true, ref: 'User' },
     invoiceList: { type: Array, default: [] },
-    reservationTime: {
-        type: Object,
-        default: {
-            logicMath: { total: 0, active: Date.now(), expire: Date.now() }, //[day, dateActive, dateExpire]
-            aiPrediction: { total: 0, active: Date.now(), expire: Date.now() },  //[day, dateActive, dateExpire]
-            naturalRandom: { total: 0, active: Date.now(), expire: Date.now() },  //[day, dateActive, dateExpire]
-            fixPatter: { total: 0, active: Date.now(), expire: Date.now() },  //[day, dateActive, dateExpire]
-        }
-    },
+    logicMath: {type: Number, default: 0},
+    aiPrediction: {type: Number, default: 0},
+    naturalRandom: {type: Number, default: 0},
+    fixPattern: {type: Number, default: 0},
 }, {
     timestamps: true,
     collection: COLLECTION_NAME

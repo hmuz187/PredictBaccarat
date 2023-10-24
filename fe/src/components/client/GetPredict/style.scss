@@ -1,0 +1,210 @@
+@media only screen and (min-width: 900px) {
+    .getPredict {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 100px;
+
+        .getAlgorithmResult {
+            margin: 25px 5px 10px 5px;
+
+            button {
+                background-color: white;
+                border-radius: 5px;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                color: var(--primary-color);
+                font-weight: bold;
+            }
+        }
+
+        .getResult {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 0 20px;
+            width: 100%;
+
+            .logicMath {
+                color: var(--blue-color);
+            }
+
+            .AI {
+                color: var(--red-color);
+            }
+
+            .naturalRandom {
+                color: var(--green-color);
+            }
+
+            .fixPattern {
+                color: purple;
+            }
+
+            .getResultAdd {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+
+            .getResultBTag {
+                background: var(--primary-color);
+                border-radius: 5px;
+                color: white;
+                width: fit-content;
+                margin: 0 auto;
+                padding: 0 5px;
+                font-weight: normal;
+            }
+
+            div.bTag {
+                margin: 0 20px;
+                font-weight: bold;
+                width: 80%;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .getPredict {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .getAlgorithmResult {
+            margin: 25px 0 10px 0;
+
+            button {
+                background-color: white;
+                border-radius: 5px;
+            }
+
+            button:hover {
+                color: var(--primary-color);
+                font-weight: bold;
+            }
+        }
+
+        .getResult {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 20px;
+
+            .logicMath {
+                color: var(--blue-color);
+            }
+
+            .AI {
+                color: var(--red-color);
+            }
+
+            .naturalRandom {
+                color: var(--green-color);
+            }
+
+            .fixPattern {
+                color: purple;
+            }
+
+            .getResultAdd {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+
+            .getResultBTag {
+                background: var(--primary-color);
+                border-radius: 5px;
+                color: white;
+                width: fit-content;
+                margin: 5px auto;
+                padding: 0 5px;
+                font-weight: normal;
+            }
+
+            div.bTag {
+                margin: 0 auto;
+                width: 80%;
+                font-weight: bold;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .getPredict {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .getAlgorithmResult {
+            margin: 25px 0 10px 0;
+
+            button {
+                background-color: white;
+                border-radius: 5px;
+            }
+
+            button:hover {
+                color: var(--primary-color);
+                font-weight: bold;
+            }
+        }
+
+        .getResult {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 0 20px;
+
+            .logicMath {
+                color: var(--blue-color);
+            }
+
+            .AI {
+                color: var(--red-color);
+            }
+
+            .naturalRandom {
+                color: var(--green-color);
+            }
+
+            .fixPattern {
+                color: purple;
+            }
+
+            .getResultAdd {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+
+            .getResultBTag {
+                background: var(--primary-color);
+                border-radius: 5px;
+                color: white;
+                width: fit-content;
+                margin: 5px auto;
+                padding: 0 5px;
+                font-weight: normal;
+            }
+
+            div.bTag {
+                margin: 0 auto;
+                width: 80%;
+                font-weight: bold;
+                word-wrap: break-word;
+            }
+        }
+    }
+}

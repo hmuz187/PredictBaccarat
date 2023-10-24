@@ -3,15 +3,19 @@ const { predictAI, wrongRightPredictAIResult } = require('../algorithm/AIpredict
 const { predictNaturalRandom, wrongRightPredictNaturalRandomResult } = require('../algorithm/naturalRandom')
 const { predictFixPattern, wrongRightPredictFixPattern } = require('../algorithm/fixPattern')
 
-const predictResult = ({ string, reservationTime }) => {
+const predictResult = ({ string, holderTime }) => {
 
-    const {logicMath, aiPrediction, naturalRandom, fixPattern} = reservationTime
+    // console.log(holderTime)
+
+
+    const { logicMath, aiPrediction, naturalRandom, fixPattern } = holderTime
+
 
     const result = {
-        logicMathString: 'not register',
-        AIpredictionString: 'not register',
-        naturalRandomString: 'not register',
-        fixPatternString: 'not register',
+        logicMathString: 'not register or expire',
+        AIpredictionString: 'not register or expire',
+        naturalRandomString: 'not register or expire',
+        fixPatternString: 'not register or expire',
         logicMathNext: '',
         AIpredictionNext: '',
         naturalRandomNext: '',
@@ -19,20 +23,20 @@ const predictResult = ({ string, reservationTime }) => {
 
     }
 
-    if (logicMath.total>0 && logicMath.expire>Date.now()) {
+    if (logicMath > Date.now()) {
         result.logicMathString = wrongRightPredictLogicMathResult(string)
         result.logicMathNext = predictLogicMath(string)
     }
-    if (aiPrediction.total>0 && aiPrediction.expire>Date.now()) {
+    if (aiPrediction > Date.now()) {
         result.AIpredictionString = wrongRightPredictAIResult(string)
         result.AIpredictionNext = predictAI(string)
 
     }
-    if (naturalRandom.total>0 && naturalRandom.expire>Date.now()) {
+    if (naturalRandom > Date.now()) {
         result.naturalRandomString = wrongRightPredictNaturalRandomResult(string)
         result.naturalRandomNext = predictNaturalRandom(string)
     }
-    if (fixPattern.total>0 && fixPattern.expire>Date.now()) {
+    if (fixPattern > Date.now()) {
         result.fixPatternString = wrongRightPredictFixPattern(string)
         result.fixPatternNext = predictFixPattern(string)
     }

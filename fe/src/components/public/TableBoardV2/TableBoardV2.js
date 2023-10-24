@@ -126,7 +126,7 @@ const TableBoardV2 = () => {
         var item_bit = item.replace(/B/g, '0').replace(/P/g, '1');
         const result = await postTableResultString({ string: item_bit })
 
-        console.log(result.data.data)
+        //console.log(result.data.data)
 
         setResultStringLogicMath(result.data.data.logicMath)
         setResultStringAI(result.data.data.AIprediction)

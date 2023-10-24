@@ -9,7 +9,7 @@ const Service = () => {
   const data = dataService
 
   const dispatch = useContext(CartDispatchContext);
-  const { items, isCartOpen } = useContext(CartStateContext);
+  const { items} = useContext(CartStateContext);
 
 
   const [cartItemsCur, setCartItemsCur] = useState(items)
@@ -41,7 +41,7 @@ const Service = () => {
 
                         var cartItems = cartItemsCur
 
-                        const dataSend = { id: item.id, algorithm: items.algorithm, package: item.name, price: item.price, quantity: 1 }
+                        const dataSend = { id: item.id, algorithm: items.algorithm, code:items.code, package: item.name, price: item.price, quantity: 1,  timePackage: item.timePackage  }
                         var thisItem = cartItems.find(cartItem => cartItem.id === item.id) || []
 
                         const handleAddToCart = () => {

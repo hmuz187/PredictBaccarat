@@ -12,7 +12,7 @@ const REFRESH_TOKEN = process.env.GOOGLE_REFRESH_TOKEN;
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN })
 
-const sendMail = async () => {
+const sendMail = async ({email, code}) => {
     try {
         const accessToken = await oAuth2Client.getAccessToken();
         var transport = nodemailer.createTransport({
@@ -28,19 +28,15 @@ const sendMail = async () => {
         })
 
         var adminEmail = 'alex.nodejs0209@gmail.com'
-        const cryptoCode = crypto.randomBytes(6).toString('base64url')
-        var confirmationCode = cryptoCode
-        console.log(confirmationCode);
 
         let info = await transport.sendMail({
             from: `"Alex Do " <${adminEmail}>`,  
-            to: 'alex.spencer0209@gmail.com',
-            subject: 'Xác nhận đăng ký',
-            text: 'Mã xác nhận của bạn là: ',
-            html: "<b>Thank you</b>",
+            to: `${email}`,
+            subject: 'Sign Up verify Code',
+            html: `<h1>Thank you very much</h1><h2>Here is the code: ${code}</h2>`,
         });
 
-        console.log(info);
+        //console.log(info.response);
 
 
     }
@@ -49,7 +45,7 @@ const sendMail = async () => {
     }
 }
 
-sendMail();
+sendMail({email:'alex.spencer0209@gmail.com', code:'00123bhg'});
 
 
 

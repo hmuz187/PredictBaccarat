@@ -8,7 +8,11 @@ const createTokenPair = async({payload, privateKey, publicKey}) => {
         const refreshToken = JWT.sign(payload, privateKey, {expiresIn: '7 days'})
 
         JWT.verify(accessToken, publicKey, (error, decode)=>{
-            if(error){console.log(`error::verify`, error)} else { console.log(`decode::verify`, decode)}
+            if(error){
+                //console.log(`error::verify`, error)
+        } else { 
+    //console.log(`decode::verify`, decode)
+}
         })
 
         return{accessToken, refreshToken}

@@ -11,7 +11,8 @@ const invoiceModel = new Schema({
     invoice_totalPayment: { type: Number, default: 0 },
     invoice_applyPayment: { type: String, enum: ['Paypal', 'Card', 'GooglePay', 'Payoo', 'Stripe'], default: '' },
     invoice_detail: { type: Array, default: [] },
-    invoice_status: { type: String, enum: ['paid', 'none', 'check'], default: 'none' }
+    invoice_status: { type: String, enum: ['paid', 'none', 'check'], default: 'none' },
+    invoice_orderId: {type: String, required: true, unique: true}
 }, {
     timestamps: true,
     collection: COLLECTION_NAME
