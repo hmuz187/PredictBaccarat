@@ -9,7 +9,7 @@ POST {{url}}/try/tableResultString
 Content-Type: application/json
 
 {
-    "string" : "0010101000011000110000010010011"
+    "string" : "BBBBPPTPTPB"
 }
 
 
@@ -18,7 +18,7 @@ POST https://103.116.105.147:2002/v1/public/try/tableResultString
 Content-Type: application/json
 
 {
-    "string" : "0010101000011000110000010010011"
+    "string" : "BBBBPPTPTPB"
 }
 
 
